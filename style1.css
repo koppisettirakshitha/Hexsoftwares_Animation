@@ -1,0 +1,52 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.logo h1 {
+    font-size: 2em;
+    color: #333;
+    animation: fadeIn 2s ease-in-out 0.5s;
+    animation-fill-mode: both;
+}
+
+.logo p {
+    color: #666;
+    font-size: 1em;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-in-out 1s;
+    animation-fill-mode: both;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(-30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
